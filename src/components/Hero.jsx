@@ -7,7 +7,7 @@ export default class Hero extends Component {
   render() {
     return (
       <>
-        {/* <SplashCursor /> */}
+        <SplashCursor />
         <div className="w-full h-screen font-sans overflow-hidden bg-[#b51947] text-black">
           <ScrambledText
             className="scrambled-text-demo py-30 px-6"
