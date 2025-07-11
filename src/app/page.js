@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Gotidea from "@/components/GotIdea";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Idea from "@/components/Idea";
+import Goal from "@/components/Goal";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
@@ -13,7 +13,7 @@ export default function Home() {
     <>
     <Header />
     <Hero />
-    <Idea />
+    <Goal />
     <Services />
     <Casestudies />
     <Testimonials />
