@@ -47,25 +47,42 @@ const Header = () => {
               onClick={handleContactClick}
               className="hidden font-normal text-lg lg:block relative overflow-hidden group"
             >
+              <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
                 Talk To Us
+              </span>
             </button>
-            <a className="hidden font-normal text-lg lg:block" href="">
-              Testimonials
+            <a
+              className="hidden font-normal text-lg lg:block relative overflow-hidden group"
+              href=""
+            >
+              <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
+                Testimonials
+              </span>
             </a>
-            <a className="hidden font-normal text-lg lg:block" href="">
-              What's Included
+            <a
+              className="hidden font-normal text-lg lg:block relative overflow-hidden group"
+              href=""
+            >
+              <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
+                What's Included
+              </span>
             </a>
-            <a className="hidden font-normal text-lg lg:block" href="">
-              How It Works
+            <a
+              className="hidden font-normal text-lg lg:block relative overflow-hidden group"
+              href=""
+            >
+              <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
+                How It Works
+              </span>
             </a>
-            <a className="hidden font-normal text-lg lg:block" href="">
-              Pricing
+            <a
+              className="hidden font-normal text-lg lg:block relative overflow-hidden group"
+              href=""
+            >
+              <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
+                Pricing
+              </span>
             </a>
-            <button className="hidden md:block items-center my-auto py-2 bg-black text-white rounded-xl border-2 border-black hover:bg-white hover:text-black">
-              <a className="px-4 text-base" href="">
-                Get a free Audit
-              </a>
-            </button>
             <div className="h-12 w-12 mr-4 cursor-pointer lg:hidden">
               <svg
                 viewBox="0 0 24 24"

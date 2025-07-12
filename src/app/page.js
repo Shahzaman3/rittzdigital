@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import Idea from "@/components/Idea";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-import Image from "next/image";
 
 export default function Home() {
   return (
