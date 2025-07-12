@@ -22,7 +22,7 @@ export default function ScrollAnimatedDiv() {
         duration: 2.5,
         scrollTrigger: {
           trigger: element,
-          start: "top 80%",
+          start: "top 95%",
           end: "bottom 80%",
           scrub: true,
         },
@@ -34,6 +34,6 @@ export default function ScrollAnimatedDiv() {
   return (
     <div
       ref={boxRef}
-      className="absolute top-25 -left-31 w-[825px]  h-[450px] bg-amber-500 z-0 "></div>
+      className="absolute top-20 -left-31 w-[825px]  h-[450px] bg-amber-500 z-0 "></div>
   );
 }
