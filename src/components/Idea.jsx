@@ -27,6 +27,10 @@ export default function Idea() {
       link: "#",
       text: "Develop with Precision",
     },
+    {
+      link: "#",
+      text: "Test, Iterate & Launch With Confidence",
+    },
   ];
 
   useEffect(() => {

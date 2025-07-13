@@ -151,8 +151,6 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
-      --tw-text-shadow-color: initial;
-      --tw-text-shadow-alpha: 100%;
     }
   }
 }
@@ -162,7 +160,6 @@
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-red-500: oklch(63.7% .237 25.331);
-    --color-red-700: oklch(50.5% .213 27.518);
     --color-orange-500: oklch(70.5% .213 47.604);
     --color-amber-500: oklch(76.9% .188 70.08);
     --color-yellow-400: oklch(85.2% .199 91.936);
@@ -173,7 +170,6 @@
     --color-blue-600: oklch(54.6% .245 262.881);
     --color-pink-100: oklch(94.8% .028 342.258);
     --color-pink-200: oklch(89.9% .061 343.231);
-    --color-pink-300: oklch(82.3% .12 346.018);
     --color-pink-400: oklch(71.8% .202 349.761);
     --color-pink-500: oklch(65.6% .241 354.308);
     --color-pink-600: oklch(59.2% .249 .584);
@@ -185,13 +181,13 @@
     --color-gray-500: oklch(55.1% .027 264.364);
     --color-gray-700: oklch(37.3% .034 259.733);
     --color-gray-800: oklch(27.8% .033 256.848);
-    --color-gray-900: oklch(21% .034 264.665);
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
     --container-md: 28rem;
     --container-lg: 32rem;
     --container-xl: 36rem;
+    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-6xl: 72rem;
     --container-7xl: 80rem;
@@ -460,10 +456,6 @@
     top: calc(var(--spacing) * -15);
   }
 
-  .-top-20 {
-    top: calc(var(--spacing) * -20);
-  }
-
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -674,6 +666,10 @@
     margin-top: calc(var(--spacing) * 32);
   }
 
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
+
   .mr-3 {
     margin-right: calc(var(--spacing) * 3);
   }
@@ -722,8 +718,19 @@
     margin-left: calc(var(--spacing) * 4);
   }
 
+  .ml-10 {
+    margin-left: calc(var(--spacing) * 10);
+  }
+
   .box-border {
     box-sizing: border-box;
+  }
+
+  .line-clamp-1 {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
   }
 
   .block {
@@ -792,6 +799,14 @@
 
   .h-\[28rem\] {
     height: 28rem;
+  }
+
+  .h-\[50\%\] {
+    height: 50%;
+  }
+
+  .h-\[50\] {
+    height: 50px;
   }
 
   .h-\[282px\] {
@@ -878,6 +893,14 @@
     width: calc(var(--spacing) * 48);
   }
 
+  .w-\[50\%\] {
+    width: 50%;
+  }
+
+  .w-\[50\] {
+    width: 50px;
+  }
+
   .w-\[53rem\] {
     width: 53rem;
   }
@@ -904,6 +927,10 @@
 
   .w-screen {
     width: 100vw;
+  }
+
+  .max-w-3xl {
+    max-width: var(--container-3xl);
   }
 
   .max-w-4xl {
@@ -973,6 +1000,10 @@
 
   .transform {
     transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+  }
+
+  .cursor-default {
+    cursor: default;
   }
 
   .cursor-pointer {
@@ -1071,6 +1102,10 @@
     margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .overflow-auto {
+    overflow: auto;
+  }
+
   .overflow-hidden {
     overflow: hidden;
   }
@@ -1081,6 +1116,10 @@
 
   .overflow-x-hidden {
     overflow-x: hidden;
+  }
+
+  .overflow-x-visible {
+    overflow-x: visible;
   }
 
   .overscroll-contain {
@@ -1275,10 +1314,6 @@
     background-color: var(--color-pink-200);
   }
 
-  .bg-pink-600 {
-    background-color: var(--color-pink-600);
-  }
-
   .bg-pink-700 {
     background-color: var(--color-pink-700);
   }
@@ -1409,6 +1444,18 @@
     padding-top: calc(var(--spacing) * 12);
   }
 
+  .pt-40 {
+    padding-top: calc(var(--spacing) * 40);
+  }
+
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
+
+  .pl-20 {
+    padding-left: calc(var(--spacing) * 20);
+  }
+
   .text-center {
     text-align: center;
   }
@@ -1479,20 +1526,20 @@
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
 
+  .text-\[3\.5vh\] {
+    font-size: 3.5vh;
+  }
+
+  .text-\[3\.8vh\] {
+    font-size: 3.8vh;
+  }
+
   .text-\[3rem\] {
     font-size: 3rem;
   }
 
   .text-\[4vh\] {
     font-size: 4vh;
-  }
-
-  .text-\[6vh\] {
-    font-size: 6vh;
-  }
-
-  .text-\[7vh\] {
-    font-size: 7vh;
   }
 
   .text-\[17px\] {
@@ -1533,6 +1580,11 @@
   .leading-\[1\.75\] {
     --tw-leading: 1.75;
     line-height: 1.75;
+  }
+
+  .leading-\[3\.5rem\] {
+    --tw-leading: 3.5rem;
+    line-height: 3.5rem;
   }
 
   .leading-\[32px\] {
@@ -1625,10 +1677,6 @@
     color: var(--color-gray-800);
   }
 
-  .text-gray-900 {
-    color: var(--color-gray-900);
-  }
-
   .text-green-500 {
     color: var(--color-green-500);
   }
@@ -1639,10 +1687,6 @@
 
   .text-pink-100 {
     color: var(--color-pink-100);
-  }
-
-  .text-pink-500 {
-    color: var(--color-pink-500);
   }
 
   .text-pink-600 {
@@ -1659,10 +1703,6 @@
 
   .text-red-500 {
     color: var(--color-red-500);
-  }
-
-  .text-red-700 {
-    color: var(--color-red-700);
   }
 
   .text-white {
@@ -1901,62 +1941,14 @@
   }
 
   @media (hover: hover) {
-    .hover\:bg-\[\#FCDDD0\]:hover {
-      background-color: #fcddd0;
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-\[\#FCDDD4\]:hover {
-      background-color: #fcddd4;
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-\[\#FCDDD7\]:hover {
-      background-color: #fcddd7;
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-\[\#FCDDD\]:hover {
-      background-color: #FCDDD;
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-\[\#fcd4f2\]:hover {
-      background-color: #fcd4f2;
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-\[\#fcd4f9\]:hover {
-      background-color: #fcd4f9;
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:bg-gray-100:hover {
       background-color: var(--color-gray-100);
     }
   }
 
   @media (hover: hover) {
-    .hover\:bg-pink-300:hover {
-      background-color: var(--color-pink-300);
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:bg-pink-500:hover {
       background-color: var(--color-pink-500);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-pink-600:hover {
-      background-color: var(--color-pink-600);
     }
   }
 
@@ -2007,42 +1999,6 @@
     .hover\:shadow-md:hover {
       --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, #0000001a), 0 2px 4px -2px var(--tw-shadow-color, #0000001a);
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:shadow-pink-300:hover {
-      --tw-shadow-color: oklch(82.3% .12 346.018);
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-pink-300:hover {
-        --tw-shadow-color: color-mix(in oklab, var(--color-pink-300) var(--tw-shadow-alpha), transparent);
-      }
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:shadow-pink-800:hover {
-      --tw-shadow-color: oklch(45.9% .187 3.815);
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:shadow-pink-800:hover {
-        --tw-shadow-color: color-mix(in oklab, var(--color-pink-800) var(--tw-shadow-alpha), transparent);
-      }
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:text-shadow-white:hover {
-      --tw-text-shadow-color: #fff;
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:text-shadow-white:hover {
-        --tw-text-shadow-color: color-mix(in oklab, var(--color-white) var(--tw-text-shadow-alpha), transparent);
-      }
     }
   }
 
@@ -2336,18 +2292,6 @@
   }
 
   @media (width >= 40rem) {
-    .sm\:text-\[7vh\] {
-      font-size: 7vh;
-    }
-  }
-
-  @media (width >= 40rem) {
-    .sm\:text-\[8vh\] {
-      font-size: 8vh;
-    }
-  }
-
-  @media (width >= 40rem) {
     .sm\:text-\[18px\] {
       font-size: 18px;
     }
@@ -2515,18 +2459,6 @@
   }
 
   @media (width >= 48rem) {
-    .md\:text-\[8vh\] {
-      font-size: 8vh;
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:text-\[10vh\] {
-      font-size: 10vh;
-    }
-  }
-
-  @media (width >= 48rem) {
     .md\:text-\[72px\] {
       font-size: 72px;
     }
@@ -2669,18 +2601,6 @@
     .xl\:text-8xl {
       font-size: var(--text-8xl);
       line-height: var(--tw-leading, var(--text-8xl--line-height));
-    }
-  }
-
-  @media (width >= 80rem) {
-    .xl\:text-\[9vh\] {
-      font-size: 9vh;
-    }
-  }
-
-  @media (width >= 80rem) {
-    .xl\:text-\[12vh\] {
-      font-size: 12vh;
     }
   }
 
@@ -3014,17 +2934,6 @@
   syntax: "*";
   inherits: false;
   initial-value: 1;
-}
-
-@property --tw-text-shadow-color {
-  syntax: "*";
-  inherits: false
-}
-
-@property --tw-text-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
 }
 
 

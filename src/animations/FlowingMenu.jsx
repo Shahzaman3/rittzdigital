@@ -59,7 +59,7 @@ function MenuItem({ link, text }) {
 
   const repeatedMarqueeContent = Array.from({ length: 4 }).map((_, idx) => (
     <React.Fragment key={idx}>
-      <span className="text-white uppercase font-normal text-[4vh] leading-[1.2] p-[1vh_1vw_0]">
+      <span className="text-white uppercase font-normal text-[3.5vh] leading-[1.2] p-[1vh_1vw_0]">
         {text}
       </span>
     </React.Fragment>
