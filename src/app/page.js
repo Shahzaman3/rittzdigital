@@ -8,12 +8,14 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Work from "@/components/Work";
 import Goal from '@/components/Goal';
+import Brand from "@/components/Brand";
 
 export default function Home() {
   return (
     <>
     <Header />
     <Hero />
+    <Brand />
     <Idea />
     <Goal />
     <Work />

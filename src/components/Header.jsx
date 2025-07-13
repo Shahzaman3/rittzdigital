@@ -64,7 +64,7 @@ const Header = () => {
               href=""
             >
               <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
-                What's Included
+                No Code Nest
               </span>
             </a>
             <a
@@ -72,7 +72,7 @@ const Header = () => {
               href=""
             >
               <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
-                How It Works
+                Our Goals
               </span>
             </a>
             <a
@@ -80,7 +80,7 @@ const Header = () => {
               href=""
             >
               <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
-                Pricing
+                What We Do
               </span>
             </a>
             <div className="h-12 w-12 mr-4 cursor-pointer lg:hidden">
