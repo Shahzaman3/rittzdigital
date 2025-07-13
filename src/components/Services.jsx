@@ -23,7 +23,7 @@ export default function Services() {
 
     gsap.fromTo(
       letters,
-      { y: "100%", opacity: 0 },
+      { y: "150%", opacity: 0 },
       {
         y: "0%",
         opacity: 1,
@@ -76,9 +76,8 @@ export default function Services() {
           isTilted={true}
           tiltDirection="left"
           autoplay={true}
-          autoplaySpeed={1}
+          autoplaySpeed={1.5}
           autoplayDirection="down"
-          pauseOnHover={false}
         />
       </div>
 

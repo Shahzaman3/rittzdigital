@@ -70,7 +70,7 @@ function Testimonials() {
 
     gsap.fromTo(
       letters,
-      { y: "100%", opacity: 0 },
+      { y: "150%", opacity: 0 },
       {
         y: "0%",
         opacity: 1,

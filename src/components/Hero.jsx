@@ -2,11 +2,12 @@
 import ScrambledText from "@/animations/ScrambledText";
 import SplashCursor from "@/animations/SplashCursor";
 import React, { Component } from "react";
+import CardSwap, { Card } from '@/animations/CardSwap'
 
 export default class Hero extends Component {
   render() {
     return (
-      <>
+      <div className="relative flex overflow-hidden">
         <SplashCursor />
         <div className="w-full h-screen font-sans overflow-hidden bg-[#b51947] text-black">
           <ScrambledText
@@ -25,7 +26,28 @@ export default class Hero extends Component {
             </span>
           </ScrambledText>
         </div>
-      </>
+        <div style={{ height: "600px", position: "relative" }}>
+          <CardSwap
+            cardDistance={60}
+            verticalDistance={70}
+            delay={5000}
+            pauseOnHover={false}
+          >
+            <Card>
+              <h3>Card 1</h3>
+              <p>Your content here</p>
+            </Card>
+            <Card>
+              <h3>Card 2</h3>
+              <p>Your content here</p>
+            </Card>
+            <Card>
+              <h3>Card 3</h3>
+              <p>Your content here</p>
+            </Card>
+          </CardSwap>
+        </div>
+      </div>
     );
   }
 }

@@ -7,7 +7,6 @@ import Goal from "@/components/Goal";
 import Work from "@/components/Work";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
-import Image from "next/image";
 
 export default function Home() {
   return (

@@ -51,32 +51,6 @@ export default function InfiniteScroll({
       gsap.set(child, { y });
     });
 
-    const observer = Observer.create({
-      target: container,
-      type: "wheel,touch,pointer",
-      preventDefault: true,
-      onPress: ({ target }) => {
-        target.style.cursor = "grabbing";
-      },
-      onRelease: ({ target }) => {
-        target.style.cursor = "grab";
-      },
-      onChange: ({ deltaY, isDragging, event }) => {
-        const d = event.type === "wheel" ? -deltaY : deltaY;
-        const distance = isDragging ? d * 5 : d * 10;
-        divItems.forEach((child) => {
-          gsap.to(child, {
-            duration: 0.5,
-            ease: "expo.out",
-            y: `+=${distance}`,
-            modifiers: {
-              y: gsap.utils.unitize(wrapFn),
-            },
-          });
-        });
-      },
-    });
-
     let rafId;
     if (autoplay) {
       const directionFactor = autoplayDirection === "down" ? 1 : -1;
@@ -95,30 +69,9 @@ export default function InfiniteScroll({
       };
 
       rafId = requestAnimationFrame(tick);
-
-      if (pauseOnHover) {
-        const stopTicker = () => rafId && cancelAnimationFrame(rafId);
-        const startTicker = () => (rafId = requestAnimationFrame(tick));
-
-        container.addEventListener("mouseenter", stopTicker);
-        container.addEventListener("mouseleave", startTicker);
-
-        return () => {
-          observer.kill();
-          stopTicker();
-          container.removeEventListener("mouseenter", stopTicker);
-          container.removeEventListener("mouseleave", startTicker);
-        };
-      } else {
-        return () => {
-          observer.kill();
-          rafId && cancelAnimationFrame(rafId);
-        };
-      }
     }
 
     return () => {
-      observer.kill();
       if (rafId) cancelAnimationFrame(rafId);
     };
   }, [
@@ -126,7 +79,6 @@ export default function InfiniteScroll({
     autoplay,
     autoplaySpeed,
     autoplayDirection,
-    pauseOnHover,
     isTilted,
     tiltDirection,
     negativeMargin,
@@ -142,7 +94,7 @@ export default function InfiniteScroll({
       <div className="absolute bottom-0 left-0 w-full h-1/4 bg-transparent z-10 pointer-events-none"></div>
 
       <div
-        className="flex flex-col overscroll-contain px-4 cursor-grab origin-center"
+        className="flex flex-col overscroll-contain px-4 origin-center"
         ref={containerRef}
         style={{
           width,
