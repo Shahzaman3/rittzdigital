@@ -9,7 +9,7 @@ export default class Hero extends Component {
     return (
       <div className="relative flex overflow-hidden">
         <SplashCursor />
-        <div className="w-full h-screen font-sans overflow-hidden bg-[#b51947] text-black">
+        <div className="w-full h-screen font-sans overflow-hidden bg-pink-700 text-black">
           <ScrambledText
             className="scrambled-text-demo py-30 px-6"
             radius={70}
@@ -47,7 +47,12 @@ export default class Hero extends Component {
             </Card>
           </CardSwap>
         </div>
+        
       </div>
     );
   }
 }
+
+
+
+

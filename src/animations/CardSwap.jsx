@@ -14,7 +14,7 @@ export const Card = forwardRef(
     <div
       ref={ref}
       {...rest}
-      className={`absolute top-1/2 left-1/2 rounded-xl border border-white bg-black text-white [transform-style:preserve-3d] [will-change:transform] [backface-visibility:hidden] ${customClass ?? ""} ${rest.className ?? ""}`.trim()}
+      className={`absolute top-1/2 left-1/2 rounded-xl  bg-orange-500 text-white [transform-style:preserve-3d] [will-change:transform] [backface-visibility:hidden] ${customClass ?? ""} ${rest.className ?? ""}`.trim()}
     >
       {children}
     </div>
@@ -218,3 +218,4 @@ const CardSwap = ({
 };
 
 export default CardSwap;
+

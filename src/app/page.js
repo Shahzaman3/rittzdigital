@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Gotidea from "@/components/GotIdea";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Brand from "@/animations/Brand";
 import Goal from "@/components/Goal";
 import Work from "@/components/Work";
 import Services from "@/components/Services";
@@ -13,6 +14,7 @@ export default function Home() {
     <>
     <Header />
     <Hero />
+    <Brand />
     <Goal />
     <Work />
     <Services />
