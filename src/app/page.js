@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import Work from "@/components/Work";
 import Goal from '@/components/Goal';
 import Brand from "@/components/Brand";
+import Product from "@/components/Product";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
     <Brand />
     <Idea />
     <Goal />
+    <Product />
     <Work />
     <Services />
     <Casestudies />

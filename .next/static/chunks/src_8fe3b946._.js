@@ -3948,76 +3948,16 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/src/animations/ScrollAnimation.jsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>ScrollAnimatedDiv)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/gsap/index.js [app-client] (ecmascript) <locals>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/gsap/ScrollTrigger.js [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
-"use client";
-;
-;
-;
-__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].registerPlugin(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"]);
-function ScrollAnimatedDiv() {
-    _s();
-    const boxRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "ScrollAnimatedDiv.useEffect": ()=>{
-            const element = boxRef.current;
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(element, {
-                y: 100
-            }, {
-                y: 483,
-                width: '99.25vw',
-                height: '23vh',
-                duration: 2.5,
-                scrollTrigger: {
-                    trigger: element,
-                    start: "top 95%",
-                    end: "bottom 80%",
-                    scrub: true
-                },
-                ease: "none"
-            });
-        }
-    }["ScrollAnimatedDiv.useEffect"], []);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        ref: boxRef,
-        className: "absolute top-20 -left-31 w-[825px]  h-[450px] bg-amber-500 z-0 "
-    }, void 0, false, {
-        fileName: "[project]/src/animations/ScrollAnimation.jsx",
-        lineNumber: 35,
-        columnNumber: 5
-    }, this);
-}
-_s(ScrollAnimatedDiv, "OEdoRTW0ftzTzCoByg4W1KCWfBg=");
-_c = ScrollAnimatedDiv;
-var _c;
-__turbopack_context__.k.register(_c, "ScrollAnimatedDiv");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
 "[project]/src/components/Goal.jsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>Ourgoals)
+    "default": (()=>Brand)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$animations$2f$ScrollAnimation$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/animations/ScrollAnimation.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/gsap/index.js [app-client] (ecmascript) <locals>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/gsap/ScrollTrigger.js [app-client] (ecmascript)");
 ;
@@ -4026,509 +3966,305 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-;
-__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].registerPlugin(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollTrigger"]);
-function Ourgoals() {
+__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].registerPlugin(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]);
+function Brand() {
     _s();
-    const anime1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const anime2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const anime3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const anime4 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const anime5 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const cubeRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const textRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const heading = "Our Goals";
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Ourgoals.useEffect": ()=>{
-            const letters = textRef.current.querySelectorAll(".letter");
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(letters, {
-                y: "150%",
-                opacity: 0
-            }, {
-                y: "0%",
-                opacity: 1,
-                duration: 1.2,
-                ease: "power4.out",
-                stagger: 0.05,
+        "Brand.useEffect": ()=>{
+            const cube = cubeRef.current;
+            const text = textRef.current;
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(text, {
+                opacity: 0,
+                x: -100
+            });
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].set(cube, {
+                scale: 2,
+                y: 50
+            });
+            const zoomTl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
                 scrollTrigger: {
-                    trigger: textRef.current,
-                    start: "top 80%",
-                    toggleActions: "restart none none none"
+                    trigger: cube,
+                    start: "top 50%",
+                    end: "top 10%",
+                    scrub: true
                 }
             });
-            const elements = [
-                anime1,
-                anime2,
-                anime3,
-                anime4,
-                anime5
-            ];
-            elements.forEach({
-                "Ourgoals.useEffect": (ref, index)=>{
-                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].to(ref.current, {
-                        y: "10px",
-                        ...index === 2 || index === 3 ? {
-                            x: "10px"
-                        } : {},
-                        duration: 1,
-                        repeat: -1,
-                        yoyo: true,
-                        ease: "power2.inOut"
-                    });
+            zoomTl.to(cube, {
+                scale: 1,
+                y: 0,
+                ease: "power2.out"
+            }).to(text, {
+                opacity: 1,
+                x: 0,
+                ease: "power2.out",
+                duration: 0.5
+            }, ">+0.1");
+            const rotateTl = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].timeline({
+                scrollTrigger: {
+                    trigger: cube,
+                    start: "top 10%",
+                    end: "bottom 125%",
+                    scrub: 2
                 }
-            }["Ourgoals.useEffect"]);
+            });
+            rotateTl.to(cube, {
+                rotateX: -90,
+                y: 60,
+                ease: "power2.inOut",
+                duration: 2
+            });
+            return ({
+                "Brand.useEffect": ()=>{
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$ScrollTrigger$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].getAll().forEach({
+                        "Brand.useEffect": (trigger)=>trigger.kill()
+                    }["Brand.useEffect"]);
+                }
+            })["Brand.useEffect"];
         }
-    }["Ourgoals.useEffect"], []);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "bg-white py-10 overflow-hidden relative",
+    }["Brand.useEffect"], []);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        style: {
+            perspective: "1400px"
+        },
+        className: "flex justify-center items-center h-[120vh] overflow-x-hidden bg-gray-200 z-0",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-7xl mx-auto px-4",
+            ref: cubeRef,
+            className: "relative w-[74rem] h-[30rem] mb-[10rem] rounded-[40px] transform-style-preserve-3d",
+            style: {
+                transformStyle: "preserve-3d"
+            },
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative",
+                    className: "absolute w-full h-full rounded-[40px] bg-amber-500 p-20 flex items-center justify-between text-white",
+                    style: {
+                        transform: "translateZ(244px)"
+                    },
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$animations$2f$ScrollAnimation$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                            fileName: "[project]/src/components/Goal.jsx",
-                            lineNumber: 56,
-                            columnNumber: 11
-                        }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative z-10",
+                            ref: textRef,
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-right mb-16 sm:mb-6 sm:absolute sm:-top-3 md:top-0 right-0 px-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            ref: textRef,
-                                            className: "text-[clamp(2.5rem,10vw,6rem)] font-bold leading-tight overflow-hidden",
-                                            children: heading.split("").map((char, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: `inline-block overflow-hidden ${char === "O" ? "text-green-500" : char === " " ? "text-gray-800" : "text-gray-900"}`,
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "letter inline-block",
-                                                        children: char === " " ? "\u00A0" : char
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Goal.jsx",
-                                                        lineNumber: 75,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                }, i, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 65,
-                                                    columnNumber: 19
-                                                }, this))
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Goal.jsx",
-                                            lineNumber: 60,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-end items-start mt-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "h-auto flex items-center justify-center",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "h-0.5 w-[60px] sm:w-[80px] xl:w-[111px] bg-gray-300 my-4 mx-1"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/Goal.jsx",
-                                                        lineNumber: 84,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 83,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "text-xs sm:text-sm text-gray-500 leading-[1.75] text-right",
-                                                    children: [
-                                                        "Code And Rules,",
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 88,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        "Creativity and Passion."
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 86,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Goal.jsx",
-                                            lineNumber: 82,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-[28px] font-semibold text-gray-800",
+                                    children: "Behind The Brand"
+                                }, void 0, false, {
                                     fileName: "[project]/src/components/Goal.jsx",
-                                    lineNumber: 59,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex flex-wrap justify-center gap-5 mb-5 sm:pt-[11rem]",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-[40px] font-semibold leading-snug",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-[20px] p-7 w-[90%] sm:w-[300px] xl:w-[400px] h-[260] max-h-[282px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    ref: anime1,
-                                                    className: "w-full relative h-[60px] mb-6",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/Rectangle 4156.png",
-                                                            className: "absolute top-3 left-1/2 -translate-x-[125%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 99,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/Rectangle 4157.png",
-                                                            className: "absolute top-0 left-1/2 -translate-x-[1%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 103,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 98,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "font-semibold text-lg sm:text-xl mb-2 text-gray-700",
-                                                    children: "End-To-End Collaboration"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 108,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-gray-500",
-                                                    children: "We Work With You From The First Idea To The Final Launch."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 111,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                        "We are not afraid. we are",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/components/Goal.jsx",
-                                            lineNumber: 97,
+                                            lineNumber: 90,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    ref: anime2,
-                                                    className: "w-full relative h-[60px] mb-6",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/Rectangle 4158.png",
-                                                            className: "absolute top-5 left-1/2 -translate-x-[125%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 118,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/Rectangle 4161.png",
-                                                            className: "absolute top-8 left-1/2 -translate-x-[65%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 122,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/Rectangle 4159.png",
-                                                            className: "absolute top-5 left-1/2 -translate-x-[95%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 126,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/Rectangle 4160.png",
-                                                            className: "absolute top-7 left-1/2 -translate-x-[15%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 130,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 117,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "font-semibold text-lg sm:text-xl mb-2 text-gray-700",
-                                                    children: "Creative Problem-Solving"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 135,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-gray-500",
-                                                    children: "Blending Logic And Artistry To Deliver Smart, Elegant Solutions."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 138,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
+                                        "your partners.",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/src/components/Goal.jsx",
-                                            lineNumber: 116,
+                                            lineNumber: 92,
                                             columnNumber: 15
-                                        }, this)
+                                        }, this),
+                                        "we build unique with you."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Goal.jsx",
-                                    lineNumber: 95,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex flex-wrap justify-center gap-5",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    ref: anime3,
-                                                    className: "w-full relative h-[60px] mb-6",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/Group 31.png",
-                                                            className: "absolute top-6 left-1/2 -translate-x-[125%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 149,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/Group 32.png",
-                                                            className: "absolute top-3 left-1/2 -translate-x-[1%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 153,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 148,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "font-semibold text-lg sm:text-xl mb-2 text-gray-700",
-                                                    children: "Iterative Process"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 158,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-gray-500",
-                                                    children: "We Refine, Test, And Improve Every Step Of The Way."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 161,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Goal.jsx",
-                                            lineNumber: 147,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    ref: anime4,
-                                                    className: "w-full relative h-[60px] mb-6",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/blue circle.png",
-                                                            className: "absolute top-2 left-1/2 -translate-x-[125%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 168,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/blue star.png",
-                                                            className: "absolute top-3 left-1/2 -translate-x-[95%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 172,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/red dot.png",
-                                                            className: "absolute top-3 left-1/2 -translate-x-[55%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 176,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/red rectangle.png",
-                                                            className: "absolute top-2 left-1/2 -translate-x-[45%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 180,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/yellow dot.png",
-                                                            className: "absolute top-5 left-1/2 -translate-x-[75%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 184,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/yellow rectangle.png",
-                                                            className: "absolute top-7 left-1/2 -translate-x-[90%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 188,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 167,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "font-semibold text-lg sm:text-xl mb-2 text-gray-700",
-                                                    children: "Engineering Meets Empathy"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 193,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-gray-500",
-                                                    children: "Our Tech Is Grounded In Purpose And Built For Real-World Use."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 196,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Goal.jsx",
-                                            lineNumber: 166,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    ref: anime5,
-                                                    className: "w-full relative h-[60px] mb-6",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/Ellipse 49.png",
-                                                            className: "absolute top-6 left-1/2 -translate-x-[125%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 203,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                                            src: "/assets/Vector.png",
-                                                            className: "absolute top-5 left-1/2 -translate-x-[55%]"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/src/components/Goal.jsx",
-                                                            lineNumber: 207,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 202,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "font-semibold text-lg sm:text-xl mb-2 text-gray-700",
-                                                    children: "Launch-Ready Mindset"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 212,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-gray-500",
-                                                    children: "We Don’t Stop At Ideas; We Take Products To Market."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/Goal.jsx",
-                                                    lineNumber: 215,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/Goal.jsx",
-                                            lineNumber: 201,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/Goal.jsx",
-                                    lineNumber: 145,
+                                    lineNumber: 88,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Goal.jsx",
-                            lineNumber: 58,
+                            lineNumber: 84,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "bg-white rounded-md  relative  w-50 h-50 ",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: "/assets/Rectangle 4206.png",
+                                    alt: "Brand Graphic",
+                                    className: " absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Goal.jsx",
+                                    lineNumber: 97,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: "/assets/Rectangle 4207.png",
+                                    alt: "Brand Graphic",
+                                    className: "absolute bottom-12 right-15 "
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Goal.jsx",
+                                    lineNumber: 98,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: "/assets/Ellipse 60.png",
+                                    alt: "Brand Graphic",
+                                    className: "absolute bottom-14 right-10"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Goal.jsx",
+                                    lineNumber: 99,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: "/assets/Polygon 1.png",
+                                    alt: "Brand Graphic",
+                                    className: "absolute top-14 left-12"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Goal.jsx",
+                                    lineNumber: 100,
+                                    columnNumber: 11
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Goal.jsx",
+                            lineNumber: 96,
+                            columnNumber: 10
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/Goal.jsx",
+                    lineNumber: 80,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute w-full h-full rounded-[40px] bg-[#fff6db] p-20 flex items-center justify-between text-black overflow-x-hidden",
+                    style: {
+                        transform: "rotateX(90deg) translateZ(244px)",
+                        backfaceVisibility: "hidden"
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-[28px] font-semibold text-gray-800",
+                                    children: "Behind The Brand"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Goal.jsx",
+                                    lineNumber: 112,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-[40px] font-semibold",
+                                    children: [
+                                        "we",
+                                        " ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-yellow-500 font-semibold",
+                                            children: "blend design"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Goal.jsx",
+                                            lineNumber: 117,
+                                            columnNumber: 15
+                                        }, this),
+                                        ", tech, and creativity",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                            fileName: "[project]/src/components/Goal.jsx",
+                                            lineNumber: 121,
+                                            columnNumber: 15
+                                        }, this),
+                                        "to build",
+                                        " ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-yellow-500 font-semibold",
+                                            children: "products"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/Goal.jsx",
+                                            lineNumber: 123,
+                                            columnNumber: 15
+                                        }, this),
+                                        " ",
+                                        "that put",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                            fileName: "[project]/src/components/Goal.jsx",
+                                            lineNumber: 127,
+                                            columnNumber: 15
+                                        }, this),
+                                        "customers first."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/Goal.jsx",
+                                    lineNumber: 115,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Goal.jsx",
+                            lineNumber: 111,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "border border-yellow-500 rounded-md relative  w-50 h-50 p-2",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: "/assets/Rectangle 4206.png",
+                                    alt: "Brand Graphic",
+                                    className: " absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2   rotate-[60deg]"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Goal.jsx",
+                                    lineNumber: 132,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: "/assets/Rectangle 4207.png",
+                                    alt: "Brand Graphic",
+                                    className: "absolute bottom-12 right-15 "
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Goal.jsx",
+                                    lineNumber: 133,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: "/assets/Ellipse 60.png",
+                                    alt: "Brand Graphic",
+                                    className: "absolute bottom-8 right-18"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Goal.jsx",
+                                    lineNumber: 134,
+                                    columnNumber: 11
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: "/assets/Polygon 1.png",
+                                    alt: "Brand Graphic",
+                                    className: "absolute top-10 left-18.5"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/Goal.jsx",
+                                    lineNumber: 135,
+                                    columnNumber: 11
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/Goal.jsx",
+                            lineNumber: 131,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Goal.jsx",
-                    lineNumber: 55,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "overflow-hidden whitespace-nowrap mt-12",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "inline-block animate-marquee text-2xl sm:text-4xl md:text-6xl xl:text-7xl font-extrabold text-white soft-shadow",
-                        children: "Build faster. Launch smarter. No code required."
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/Goal.jsx",
-                        lineNumber: 224,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/components/Goal.jsx",
-                    lineNumber: 223,
+                    lineNumber: 104,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/Goal.jsx",
-            lineNumber: 54,
+            lineNumber: 73,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/Goal.jsx",
-        lineNumber: 53,
+        lineNumber: 69,
         columnNumber: 5
     }, this);
 }
-_s(Ourgoals, "J+lBdOXkSXwXFxz+Lnt9qeOyFS8=");
-_c = Ourgoals;
+_s(Brand, "aSdBYYE9whcBlnQ258f33jbMzl0=");
+_c = Brand;
 var _c;
-__turbopack_context__.k.register(_c, "Ourgoals");
+__turbopack_context__.k.register(_c, "Brand");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -5090,4 +4826,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }}),
 }]);
 
-//# sourceMappingURL=src_0b8574d6._.js.map
+//# sourceMappingURL=src_8fe3b946._.js.map

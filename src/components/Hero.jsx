@@ -9,7 +9,7 @@ export default class Hero extends Component {
   render() {
     return (
       <div className="relative flex overflow-hidden">
-        <SplashCursor />
+        {/* <SplashCursor /> */}
         <div className="w-full h-screen pt-40 pl-20 font-sans overflow-hidden bg-[#b51947] text-black">
           <MagneticText />
         </div>
