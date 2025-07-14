@@ -30,9 +30,9 @@ const Header = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full bg-[#f5f5f57f] backdrop-blur-2xl z-50 transition-transform duration-300 ${
+        className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
           showHeader ? "translate-y-0" : "-translate-y-full"
-        }`}
+        } bg-white/70 backdrop-blur-md border-b border-[#e3e3e3] shadow-[0_2px_10px_rgba(0,0,0,0.05)]`}
       >
         <div className="w-full h-18 lg:h-20 drop-shadow-xl flex justify-between items-center">
           <a href="">

@@ -3,6 +3,9 @@
 import React, { useEffect, useRef } from "react";
 import ScrollAnimatedDiv from "@/animations/ScrollAnimation";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Ourgoals() {
   const anime1 = useRef(null);
@@ -10,13 +13,34 @@ export default function Ourgoals() {
   const anime3 = useRef(null);
   const anime4 = useRef(null);
   const anime5 = useRef(null);
+  const textRef = useRef(null);
+  const heading = "Our Goals";
 
   useEffect(() => {
+    const letters = textRef.current.querySelectorAll(".letter");
+
+    gsap.fromTo(
+      letters,
+      { y: "150%", opacity: 0 },
+      {
+        y: "0%",
+        opacity: 1,
+        duration: 1.2,
+        ease: "power4.out",
+        stagger: 0.05,
+        scrollTrigger: {
+          trigger: textRef.current,
+          start: "top 80%",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+
     const elements = [anime1, anime2, anime3, anime4, anime5];
     elements.forEach((ref, index) => {
       gsap.to(ref.current, {
         y: "10px",
-        ...(index === 2 ? { x: "10px" } : index === 3 ? { x: "10px" } : {}),
+        ...(index === 2 || index === 3 ? { x: "10px" } : {}),
         duration: 1,
         repeat: -1,
         yoyo: true,
@@ -33,17 +57,28 @@ export default function Ourgoals() {
 
           <div className="relative z-10">
             <div className="text-right mb-16 sm:mb-6 sm:absolute sm:-top-3 md:top-0 right-0 px-2">
-              <h2 className="font-bold leading-tight">
-                <span className="text-green-500 text-[4rem] sm:text-[5rem] md:text-6xl xl:text-7xl">
-                  O
-                </span>
-                <span className="text-gray-800 text-[3rem] sm:text-[4rem] md:text-5xl xl:text-6xl">
-                  ur{" "}
-                </span>
-                <span className="text-gray-900 text-[3rem] sm:text-[4rem] md:text-5xl xl:text-6xl">
-                  Goals
-                </span>
+              <h2
+                ref={textRef}
+                className="font-bold leading-tight text-[3rem] sm:text-[4rem] md:text-5xl xl:text-6xl"
+              >
+                {heading.split("").map((char, i) => (
+                  <span
+                    key={i}
+                    className={`inline-block overflow-hidden ${
+                      char === "O"
+                        ? "text-green-500"
+                        : char === " "
+                        ? "text-gray-800"
+                        : "text-gray-900"
+                    }`}
+                  >
+                    <span className="letter inline-block">
+                      {char === " " ? "\u00A0" : char}
+                    </span>
+                  </span>
+                ))}
               </h2>
+
               <div className="flex justify-end items-start mt-2">
                 <div className="h-auto flex items-center justify-center">
                   <div className="h-0.5 w-[60px] sm:w-[80px] xl:w-[111px] bg-gray-300 my-4 mx-1"></div>
@@ -56,9 +91,10 @@ export default function Ourgoals() {
               </div>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-5 mb-5  sm:pt-[11rem] ">
-         
-              <div className="bg-white rounded-[20px]  p-7 w-[90%] sm:w-[300px] xl:w-[400px] h-[260] max-h-[282px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]">
+            
+            <div className="flex flex-wrap justify-center gap-5 mb-5 sm:pt-[11rem]">
+              
+              <div className="bg-white rounded-[20px] p-7 w-[90%] sm:w-[300px] xl:w-[400px] h-[260] max-h-[282px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]">
                 <div ref={anime1} className="w-full relative h-[60px] mb-6">
                   <img
                     src="/assets/Rectangle 4156.png"
@@ -69,7 +105,6 @@ export default function Ourgoals() {
                     className="absolute top-0 left-1/2 -translate-x-[1%]"
                   />
                 </div>
-
                 <h3 className="font-semibold text-lg sm:text-xl mb-2 text-gray-700">
                   End-To-End Collaboration
                 </h3>
@@ -97,7 +132,6 @@ export default function Ourgoals() {
                     className="absolute top-7 left-1/2 -translate-x-[15%]"
                   />
                 </div>
-
                 <h3 className="font-semibold text-lg sm:text-xl mb-2 text-gray-700">
                   Creative Problem-Solving
                 </h3>
@@ -107,6 +141,7 @@ export default function Ourgoals() {
                 </p>
               </div>
             </div>
+
             <div className="flex flex-wrap justify-center gap-5">
               
               <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]">
@@ -184,6 +219,7 @@ export default function Ourgoals() {
             </div>
           </div>
         </div>
+
         <div className="overflow-hidden whitespace-nowrap mt-12">
           <div className="inline-block animate-marquee text-2xl sm:text-4xl md:text-6xl xl:text-7xl font-extrabold text-white soft-shadow">
             Build faster. Launch smarter. No code required.

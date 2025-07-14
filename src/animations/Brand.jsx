@@ -22,8 +22,8 @@ export default function Brand() {
     const zoomTl = gsap.timeline({
       scrollTrigger: {
         trigger: cube,
-        start: "top 90%",
-        end: "top 10%",
+        start: "top 50%", //top 90
+        end: "top 10%",  // top 10
         scrub: true,
       },
     });
@@ -49,18 +49,18 @@ export default function Brand() {
     const rotateTl = gsap.timeline({
       scrollTrigger: {
         trigger: cube,
-        start: "top 3%",
-        end: "bottom 105%",
+        start: "top 10%", //top 3%
+        end: "bottom 125%",//bottom 105%
         scrub: 2,
-        //markers: true,
+        markers: true,
       },
     });
 
     rotateTl.to(cube, {
       rotateX: -90,
-      y: 110,
+      y: 60,
       ease: "power2.inOut",
-      duration: 1,
+      duration: 2,
     });
 
     return () => {

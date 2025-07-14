@@ -1,6 +1,10 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaArrowRight } from "react-icons/fa";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const data = [
   {
@@ -26,19 +30,48 @@ const data = [
 ];
 
 export default function PinkSection() {
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    const letters = headingRef.current.querySelectorAll(".letter");
+
+    gsap.fromTo(
+      letters,
+      { y: "150%", opacity: 0 },
+      {
+        y: "0%",
+        opacity: 1,
+        duration: 1.2,
+        ease: "power4.out",
+        stagger: 0.05,
+        scrollTrigger: {
+          trigger: headingRef.current,
+          start: "top 80%",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+  }, []);
+
+  const mainHeading = "What We Do";
+
   return (
     <div className="min-h-screen w-full bg-pink-600 flex flex-col items-center py-12 px-4 space-y-8">
-      {/* Main Heading */}
-      <h1 className="w-full text-left text-[#FCDDD4] font-extrabold text-[3rem] sm:text-[4rem] lg:text-[6rem] px-4 sm:px-8 -mb-1">
-        What We Do
+      <h1
+        ref={headingRef}
+        className="w-full text-left text-[#FCDDD4] font-extrabold text-[3rem] sm:text-[4rem] lg:text-[6rem] px-4 sm:px-8 -mb-1"
+      >
+        {mainHeading.split("").map((char, i) => (
+          <span key={i} className="inline-block overflow-hidden">
+            <span className="letter inline-block">
+              {char === " " ? "\u00A0" : char}
+            </span>
+          </span>
+        ))}
       </h1>
 
-      {/* Subheading */}
       <div className="w-full flex justify-start items-center px-4 sm:px-8 mt-1">
-        {/* Line */}
         <div className="h-0.5 w-20 sm:w-32 bg-pink-200 mr-3"></div>
-
-        {/* Text */}
         <p className="text-xs sm:text-sm text-pink-100 text-left leading-tight">
           Trusted By Innovators,
           <br />
@@ -46,13 +79,11 @@ export default function PinkSection() {
         </p>
       </div>
 
-      {/* Cards Section */}
       {data.map((item, index) => (
         <div
           key={index}
           className="w-full max-w-6xl xl:max-w-9xl 2xl:max-w-[90rem] bg-[#FCDDD4] rounded-3xl px-6 py-10 sm:py-12 flex flex-col sm:flex-row items-center sm:items-start justify-between gap-6 sm:gap-8 transition-all duration-300"
         >
-          {/* Left - Icon + Heading */}
           <div className="flex items-start gap-3 sm:w-[22%] text-left">
             <span className="text-pink-700 text-xl mt-1">◆</span>
             <h2 className="font-extrabold text-pink-800 text-lg sm:text-xl leading-tight max-w-[160px] sm:max-w-[180px] break-words">
@@ -60,12 +91,10 @@ export default function PinkSection() {
             </h2>
           </div>
 
-          {/* Middle - Description */}
           <div className="text-pink-800 text-sm sm:text-base sm:w-[60%] leading-relaxed text-center sm:text-left">
             {item.description}
           </div>
 
-          {/* Right - Arrow */}
           <div className="sm:w-[60px] w-full flex justify-center sm:justify-end">
             <div
               className="w-12 h-12 bg-pink-700 rounded-full flex items-center justify-center transition-transform duration-300"
