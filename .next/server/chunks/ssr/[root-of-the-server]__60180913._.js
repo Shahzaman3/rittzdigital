@@ -3784,28 +3784,87 @@ function ScrollAnimatedDiv() {
     const boxRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const element = boxRef.current;
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(element, {
-            y: 100
-        }, {
-            y: 483,
-            width: '99.25vw',
-            height: '23vh',
-            duration: 2.5,
-            scrollTrigger: {
-                trigger: element,
-                start: "top 95%",
-                end: "bottom 80%",
-                scrub: true
-            },
-            ease: "none"
-        });
+        const screenWidth = window.innerWidth;
+        if (screenWidth >= 768 && screenWidth <= 971) {
+            // ✅ 768px - 971px
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(element, {
+                y: 100,
+                width: "475px"
+            }, {
+                y: 880,
+                width: "100vw",
+                height: "23vh",
+                duration: 2.5,
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 65%",
+                    end: "top -20%",
+                    scrub: true
+                },
+                ease: "linear"
+            });
+        } else if (screenWidth > 971 && screenWidth <= 1280) {
+            // ✅ 972px - 1280px
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(element, {
+                y: 100,
+                width: "475px"
+            }, {
+                y: 700,
+                width: "100vw",
+                height: "23vh",
+                duration: 2.5,
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 65%",
+                    end: "top -20%",
+                    scrub: true
+                },
+                ease: "linear"
+            });
+        } else if (screenWidth > 1280 && screenWidth <= 1440) {
+            // ✅ 1281px - 1440px
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(element, {
+                y: 100,
+                width: "1875px"
+            }, {
+                y: 580,
+                width: "100vw",
+                height: "23vh",
+                duration: 2.5,
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 65%",
+                    end: "top -20%",
+                    scrub: true
+                },
+                ease: "linear"
+            });
+        } else if (screenWidth > 1440 && screenWidth <= 1536) {
+            // ✅ 1441px - 1536px
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"].fromTo(element, {
+                y: 100,
+                width: "1875px"
+            }, {
+                y: 500,
+                width: "100vw",
+                height: "23vh",
+                duration: 2.5,
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 65%",
+                    end: "top -20%",
+                    scrub: true
+                },
+                ease: "linear"
+            });
+        }
     }, []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         ref: boxRef,
-        className: "absolute top-20 -left-31 w-[825px]  h-[450px] bg-amber-500 z-0 "
+        className: "hidden md:block absolute top-[10rem] -left-4 h-[400px] w-[875px] bg-amber-500 z-0 pointer-events-none"
     }, void 0, false, {
         fileName: "[project]/src/animations/ScrollAnimation.jsx",
-        lineNumber: 35,
+        lineNumber: 96,
         columnNumber: 5
     }, this);
 }
@@ -3963,10 +4022,10 @@ function Ourgoals() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex flex-wrap justify-center gap-5 mb-5 sm:pt-[11rem]",
+                                    className: "flex flex-wrap justify-center gap-5 mb-5 sm:pt-[11rem] md:pt-[14rem]",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-[20px] p-7 w-[90%] sm:w-[300px] xl:w-[400px] h-[260] max-h-[282px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]",
+                                            className: "bg-white rounded-[20px] p-7 w-[90%] sm:w-[300px] xl:w-[400px] h-[260] max-h-[282px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     ref: anime1,
@@ -4017,7 +4076,7 @@ function Ourgoals() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]",
+                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     ref: anime2,
@@ -4093,7 +4152,7 @@ function Ourgoals() {
                                     className: "flex flex-wrap justify-center gap-5",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]",
+                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     ref: anime3,
@@ -4144,7 +4203,7 @@ function Ourgoals() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]",
+                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     ref: anime4,
@@ -4227,7 +4286,7 @@ function Ourgoals() {
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]",
+                                            className: "bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     ref: anime5,
