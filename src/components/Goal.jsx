@@ -92,9 +92,9 @@ export default function Ourgoals() {
             </div>
 
             
-            <div className="flex flex-wrap justify-center gap-5 mb-5 sm:pt-[11rem]">
+            <div className="flex flex-wrap justify-center gap-5 mb-5 sm:pt-[11rem] md:pt-[14rem]">
               
-              <div className="bg-white rounded-[20px] p-7 w-[90%] sm:w-[300px] xl:w-[400px] h-[260] max-h-[282px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]">
+              <div className="bg-white rounded-[20px] p-7 w-[90%] sm:w-[300px] xl:w-[400px] h-[260] max-h-[282px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]">
                 <div ref={anime1} className="w-full relative h-[60px] mb-6">
                   <img
                     src="/assets/Rectangle 4156.png"
@@ -113,7 +113,7 @@ export default function Ourgoals() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]">
+              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]">
                 <div ref={anime2} className="w-full relative h-[60px] mb-6">
                   <img
                     src="/assets/Rectangle 4158.png"
@@ -144,7 +144,7 @@ export default function Ourgoals() {
 
             <div className="flex flex-wrap justify-center gap-5">
               
-              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]">
+              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]">
                 <div ref={anime3} className="w-full relative h-[60px] mb-6">
                   <img
                     src="/assets/Group 31.png"
@@ -163,7 +163,7 @@ export default function Ourgoals() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]">
+              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]">
                 <div ref={anime4} className="w-full relative h-[60px] mb-6">
                   <img
                     src="/assets/blue circle.png"
@@ -198,7 +198,7 @@ export default function Ourgoals() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),_-4px_-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),_-6px_-6px_16px_rgba(255,165,0,0.25)]">
+              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]">
                 <div ref={anime5} className="w-full relative h-[60px] mb-6">
                   <img
                     src="/assets/Ellipse 49.png"
