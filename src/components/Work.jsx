@@ -53,7 +53,7 @@ export default function Work() {
   const heading = "What We Do";
 
   return (
-    <div className="min-h-screen w-full bg-pink-800 flex flex-col items-center py-12 px-4 space-y-8">
+    <div id="whatwedo" className="min-h-screen w-full bg-pink-800 flex flex-col items-center py-12 px-4 space-y-8">
       {/* Main Heading */}
       <h2
       className="w-full text-left text-[#FCDDD4] font-extrabold text-[3rem] sm:text-[4rem] lg:text-[6rem] px-4 sm:px-8 -mb-1"

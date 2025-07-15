@@ -787,7 +787,7 @@ const Header = ()=>{
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     className: "hidden font-normal text-lg lg:block relative overflow-hidden group",
-                                    href: "",
+                                    href: "#testimonials",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full",
                                         children: "Testimonials"
@@ -819,7 +819,7 @@ const Header = ()=>{
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     className: "hidden font-normal text-lg lg:block relative overflow-hidden group",
-                                    href: "",
+                                    href: "#ourgoals",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full",
                                         children: "Our Goals"
@@ -835,7 +835,7 @@ const Header = ()=>{
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     className: "hidden font-normal text-lg lg:block relative overflow-hidden group",
-                                    href: "",
+                                    href: "#whatwedo",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full",
                                         children: "What We Do"
@@ -2220,7 +2220,7 @@ function MagneticText() {
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$gsap$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["gsap"].to(letter, {
                 x: 0,
                 y: 0,
-                duration: 6,
+                duration: 4,
                 delay: 0.2,
                 ease: "elastic.out(1, 0.3)"
             });
@@ -3403,6 +3403,7 @@ function Testimonials() {
     }["Testimonials.useEffect"], []);
     const heading = "Testimonials";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "testimonials",
         className: "bg-white w-full py-16 px-4 sm:px-6 md:px-16 relative overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3799,6 +3800,7 @@ function Work() {
     }["Work.useEffect"], []);
     const heading = "What We Do";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        id: "whatwedo",
         className: "min-h-screen w-full bg-pink-800 flex flex-col items-center py-12 px-4 space-y-8",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -4074,6 +4076,7 @@ function Ourgoals() {
         }
     }["Ourgoals.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "ourgoals",
         className: "bg-white py-10 overflow-hidden relative",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4",
@@ -5135,7 +5138,6 @@ function NoCodeNestShowcasePro() {
             });
         }
     }["NoCodeNestShowcasePro.useEffect"], []);
-    // 3D tilt on hover effect
     const handleMouseMove = (e)=>{
         const rect = imageRef.current.getBoundingClientRect();
         const x = e.clientX - rect.left - rect.width / 2;
@@ -5155,7 +5157,7 @@ function NoCodeNestShowcasePro() {
                 className: "absolute -top-10 -right-20 w-96 h-96 bg-gradient-to-br from-[#6366f1] to-[#a855f7] rounded-full opacity-25 blur-3xl"
             }, void 0, false, {
                 fileName: "[project]/src/components/Product.jsx",
-                lineNumber: 60,
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5180,17 +5182,17 @@ function NoCodeNestShowcasePro() {
                                     className: "object-contain rounded-xl shadow-lg"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Product.jsx",
-                                    lineNumber: 80,
+                                    lineNumber: 79,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Product.jsx",
-                                lineNumber: 76,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Product.jsx",
-                            lineNumber: 71,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5200,7 +5202,7 @@ function NoCodeNestShowcasePro() {
                                     children: "NoCode Nest"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Product.jsx",
-                                    lineNumber: 92,
+                                    lineNumber: 91,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5208,7 +5210,7 @@ function NoCodeNestShowcasePro() {
                                     children: "Build stunning websites without code. Pixel-perfect design, fast launch & fully responsive — crafted for creators."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Product.jsx",
-                                    lineNumber: 95,
+                                    lineNumber: 94,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -5226,30 +5228,30 @@ function NoCodeNestShowcasePro() {
                                             className: "w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/Product.jsx",
-                                            lineNumber: 112,
+                                            lineNumber: 111,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/Product.jsx",
-                                    lineNumber: 101,
+                                    lineNumber: 100,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/Product.jsx",
-                            lineNumber: 91,
+                            lineNumber: 90,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/Product.jsx",
-                    lineNumber: 69,
+                    lineNumber: 68,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Product.jsx",
-                lineNumber: 65,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5259,26 +5261,26 @@ function NoCodeNestShowcasePro() {
                         className: "absolute left-0 top-1/3 w-px h-1/2 bg-gradient-to-b from-purple-400 via-transparent to-transparent opacity-20 animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Product.jsx",
-                        lineNumber: 120,
+                        lineNumber: 119,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute right-0 bottom-1/4 w-px h-1/3 bg-gradient-to-t from-indigo-400 via-transparent to-transparent opacity-20 animate-pulse"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Product.jsx",
-                        lineNumber: 121,
+                        lineNumber: 120,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Product.jsx",
-                lineNumber: 119,
+                lineNumber: 118,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Product.jsx",
-        lineNumber: 58,
+        lineNumber: 57,
         columnNumber: 5
     }, this);
 }

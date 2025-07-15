@@ -50,7 +50,7 @@ export default function Ourgoals() {
   }, []);
 
   return (
-    <section className="bg-white py-10 overflow-hidden relative">
+    <section id="ourgoals" className="bg-white py-10 overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4">
         <div className="relative">
           <ScrollAnimatedDiv />

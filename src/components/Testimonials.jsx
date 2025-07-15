@@ -89,7 +89,7 @@ function Testimonials() {
   const heading = "Testimonials";
 
   return (
-    <section className="bg-white w-full py-16 px-4 sm:px-6 md:px-16 relative overflow-hidden">
+    <section id="testimonials" className="bg-white w-full py-16 px-4 sm:px-6 md:px-16 relative overflow-hidden">
   {/* Section Title */}
   <div className="text-center md:text-right md:absolute md:top-10 md:right-10 z-20">
     <h2

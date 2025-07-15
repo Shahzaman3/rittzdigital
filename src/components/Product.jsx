@@ -39,7 +39,6 @@ export default function NoCodeNestShowcasePro() {
     });
   }, []);
 
-  // 3D tilt on hover effect
   const handleMouseMove = (e) => {
     const rect = imageRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left - rect.width / 2;

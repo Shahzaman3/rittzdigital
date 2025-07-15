@@ -53,7 +53,7 @@ const Header = () => {
             </button>
             <a
               className="hidden font-normal text-lg lg:block relative overflow-hidden group"
-              href=""
+              href="#testimonials"
             >
               <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
                 Testimonials
@@ -69,7 +69,7 @@ const Header = () => {
             </a>
             <a
               className="hidden font-normal text-lg lg:block relative overflow-hidden group"
-              href=""
+              href="#ourgoals"
             >
               <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
                 Our Goals
@@ -77,7 +77,7 @@ const Header = () => {
             </a>
             <a
               className="hidden font-normal text-lg lg:block relative overflow-hidden group"
-              href=""
+              href="#whatwedo"
             >
               <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
                 What We Do

@@ -43,7 +43,7 @@ export default function MagneticText() {
       gsap.to(letter, {
         x: 0,
         y: 0,
-        duration: 6,
+        duration: 4,
         delay: 0.2,
         ease: "elastic.out(1, 0.3)",
       });
