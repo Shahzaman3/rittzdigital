@@ -61,7 +61,8 @@ const Header = () => {
             </a>
             <a
               className="hidden font-normal text-lg lg:block relative overflow-hidden group"
-              href=""
+              href="https://nocodenest.vercel.app/"
+              target="_blank"
             >
               <span className="relative inline-block after:block after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 group-hover:after:w-full">
                 No Code Nest
