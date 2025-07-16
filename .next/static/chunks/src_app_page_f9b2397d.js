@@ -8,7 +8,7 @@
   "static/chunks/node_modules_swiper_97a96807._.js",
   "static/chunks/node_modules_react-icons_fa_index_mjs_d2e2d7f5._.js",
   "static/chunks/node_modules_react-icons_lib_74ccc930._.js",
-  "static/chunks/node_modules_3fb037e3._.js",
+  "static/chunks/node_modules_c17a8a26._.js",
   "static/chunks/node_modules_swiper_62da158d._.css"
 ],
     source: "dynamic"
