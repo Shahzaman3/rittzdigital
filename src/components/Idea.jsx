@@ -12,23 +12,19 @@ export default function Idea() {
   const line2Ref = useRef();
   const flowItems = [
     {
-      link: "#",
       text: "Understand your Vision",
     },
     {
-      link: "#",
       text: "Co-Create A Roadmap",
     },
     {
-      link: "#",
       text: "Design with Empathy",
     },
     {
-      link: "#",
+
       text: "Develop with Precision",
     },
     {
-      link: "#",
       text: "Test, Iterate & Launch With Confidence",
     },
   ];
@@ -74,7 +70,7 @@ export default function Idea() {
   }, []);
 
   const line1Text = [
-    { char: "F", className: "text-yellow-500" },
+    { char: "F", className: "text-pink-800" },
     { char: "r" },
     { char: "o" },
     { char: "m" },
@@ -98,7 +94,7 @@ export default function Idea() {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row items-center md:items-center justify-center gap-12 px-6 md:px-12 py-14 bg-white">
+    <div className="flex flex-col lg:flex-row items-center md:items-center justify-center gap-12 px-6 md:px-12 py-14 bg-[#f3d7ea]">
       {/* Left Column */}
       <div className="lg:w-2/3 space-y-8 text-center md:text-center lg:text-left">
         <h2 className="text-[36px] sm:text-[56px] md:text-[72px] lg:text-[93px] font-bold leading-tight overflow-hidden">
@@ -110,7 +106,7 @@ export default function Idea() {
             {line1Text.map((item, index) => (
               <span key={index} className="overflow-hidden">
                 <span
-                  className={`letter inline-block text-gray-800 ${
+                  className={`letter inline-block text-black ${
                     item.className || ""
                   }`}
                 >
@@ -127,7 +123,7 @@ export default function Idea() {
           >
             {line2Text.map((item, index) => (
               <span key={index} className="overflow-hidden">
-                <span className="letter inline-block text-gray-800">
+                <span className="letter inline-block text-black">
                   {item.char}
                 </span>
               </span>
@@ -137,8 +133,8 @@ export default function Idea() {
 
         {/* Subheading and Divider */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-4">
-          <div className="h-0.5 w-24 bg-gray-300" />
-          <p className="text-sm text-gray-500 text-center sm:text-left leading-[1.75]">
+          <div className="h-0.5 w-24 mt-5 bg-pink-800" />
+          <p className="text-sm text-black text-center sm:text-left leading-[1.75]">
             Turning Bold Ideas Into
             <br />
             Market-Ready Products.
@@ -149,12 +145,11 @@ export default function Idea() {
         <div className="w-full flex justify-center lg:justify-start">
           <a
             href="https://nocodenest.vercel.app/"
-            target="_blank" // optional: open in new tab
             rel="noopener noreferrer"
             className="w-full sm:w-[320px] md:w-[420px] lg:w-[457px] px-6 py-3 cursor-pointer text-sm border border-gray-400 text-black relative overflow-hidden group inline-block text-center"
           >
             <span
-              className="absolute bottom-0 left-0 w-0 h-0 bg-black rounded-full transition-all duration-400 ease-out group-hover:w-[60rem] group-hover:h-[60rem]"
+              className="absolute bottom-0 left-0 w-0 h-0 bg-pink-800 rounded-full transition-all duration-400 ease-out group-hover:w-[60rem] group-hover:h-[60rem]"
               style={{ transform: "translate(-50%, 50%)" }}
             ></span>
             <span className="relative z-10 transition-all duration-300 group-hover:text-white">

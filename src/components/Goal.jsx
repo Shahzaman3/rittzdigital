@@ -1,23 +1,24 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import ScrollAnimatedDiv from "@/animations/ScrollAnimation";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
 
-gsap.registerPlugin(ScrollTrigger);
-
-export default function Ourgoals() {
-  const anime1 = useRef(null);
-  const anime2 = useRef(null);
-  const anime3 = useRef(null);
-  const anime4 = useRef(null);
-  const anime5 = useRef(null);
-  const textRef = useRef(null);
-  const heading = "Our Goals";
+export default function Goals() {
+  const caseRef = useRef();
+  const caseText = [
+    { char: "O", className: "text-green-500" },
+    { char: "u" },
+    { char: "r" },
+    { char: " " },
+    { char: "G" },
+    { char: "o" },
+    { char: "a" },
+    { char: "l" },
+    { char: "s" },
+  ];
 
   useEffect(() => {
-    const letters = textRef.current.querySelectorAll(".letter");
+    const letters = caseRef.current.querySelectorAll(".letter");
 
     gsap.fromTo(
       letters,
@@ -29,203 +30,223 @@ export default function Ourgoals() {
         ease: "power4.out",
         stagger: 0.05,
         scrollTrigger: {
-          trigger: textRef.current,
+          trigger: caseRef.current,
           start: "top 80%",
           toggleActions: "restart none none none",
         },
       }
     );
-
-    const elements = [anime1, anime2, anime3, anime4, anime5];
-    elements.forEach((ref, index) => {
-      gsap.to(ref.current, {
-        y: "10px",
-        ...(index === 2 || index === 3 ? { x: "10px" } : {}),
-        duration: 1,
-        repeat: -1,
-        yoyo: true,
-        ease: "power2.inOut",
-      });
-    });
   }, []);
-
   return (
-    <section className="bg-white py-10 overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="relative">
-          <ScrollAnimatedDiv />
-
-          <div className="relative z-10">
-            <div className="text-right mb-16 sm:mb-6 sm:absolute sm:-top-3 md:top-0 right-0 px-2">
-              <h2
-                ref={textRef}
-                className="text-[clamp(2.5rem,10vw,6rem)] font-bold leading-tight overflow-hidden"
-              >
-                {heading.split("").map((char, i) => (
+    <div id="Our Goals" className="w-full h-[100vh] overflow-hidden relative grid grid-cols-1 xl:grid-cols-2 bg-white hide-scrollbar">
+      <div className="flex flex-col justify-items-start z-20">
+        <div className="text-right bg-white py-8 px-6 w-full">
+          <h2
+            className="text-[clamp(2.5rem,10vw,6rem)] font-bold leading-tight overflow-hidden"
+            ref={caseRef}
+          >
+            <div
+              className="flex flex-wrap overflow-hidden"
+              style={{ lineHeight: 1 }}
+            >
+              {caseText.map((item, index) => (
+                <span key={index} className="overflow-hidden">
                   <span
-                    key={i}
-                    className={`inline-block overflow-hidden ${
-                      char === "O"
-                        ? "text-green-500"
-                        : char === " "
-                        ? "text-gray-800"
-                        : "text-gray-900"
+                    className={`letter inline-block text-gray-800 ${
+                      item.className || ""
                     }`}
                   >
-                    <span className="letter inline-block">
-                      {char === " " ? "\u00A0" : char}
-                    </span>
+                    {item.char === " " ? "\u00A0" : item.char}
                   </span>
-                ))}
-              </h2>
-
-              <div className="flex justify-end items-start mt-2">
-                <div className="h-auto flex items-center justify-center">
-                  <div className="h-0.5 w-[60px] sm:w-[80px] xl:w-[111px] bg-gray-300 my-4 mx-1"></div>
-                </div>
-                <div className="text-xs sm:text-sm text-gray-500 leading-[1.75] text-right">
-                  Code And Rules,
-                  <br />
-                  Creativity and Passion.
-                </div>
-              </div>
+                </span>
+              ))}
             </div>
-
-            
-            <div className="flex flex-wrap justify-center gap-5 mb-5 sm:pt-[11rem] md:pt-[14rem]">
-              
-              <div className="bg-white rounded-[20px] p-7 w-[90%] sm:w-[300px] xl:w-[400px] h-[260] max-h-[282px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]">
-                <div ref={anime1} className="w-full relative h-[60px] mb-6">
-                  <img
-                    src="/assets/Rectangle 4156.png"
-                    className="absolute top-3 left-1/2 -translate-x-[125%]"
-                  />
-                  <img
-                    src="/assets/Rectangle 4157.png"
-                    className="absolute top-0 left-1/2 -translate-x-[1%]"
-                  />
-                </div>
-                <h3 className="font-semibold text-lg sm:text-xl mb-2 text-gray-700">
-                  End-To-End Collaboration
-                </h3>
-                <p className="text-sm text-gray-500">
-                  We Work With You From The First Idea To The Final Launch.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]">
-                <div ref={anime2} className="w-full relative h-[60px] mb-6">
-                  <img
-                    src="/assets/Rectangle 4158.png"
-                    className="absolute top-5 left-1/2 -translate-x-[125%]"
-                  />
-                  <img
-                    src="/assets/Rectangle 4161.png"
-                    className="absolute top-8 left-1/2 -translate-x-[65%]"
-                  />
-                  <img
-                    src="/assets/Rectangle 4159.png"
-                    className="absolute top-5 left-1/2 -translate-x-[95%]"
-                  />
-                  <img
-                    src="/assets/Rectangle 4160.png"
-                    className="absolute top-7 left-1/2 -translate-x-[15%]"
-                  />
-                </div>
-                <h3 className="font-semibold text-lg sm:text-xl mb-2 text-gray-700">
-                  Creative Problem-Solving
-                </h3>
-                <p className="text-sm text-gray-500">
-                  Blending Logic And Artistry To Deliver Smart, Elegant
-                  Solutions.
-                </p>
-              </div>
+          </h2>
+          <div className="flex align-middle">
+            <div className="h-auto flex align-center justify-center">
+              <div className="h-0.5 w-14  sm:w-[111px] bg-gray-600 my-7  mx-1 "></div>
             </div>
-
-            <div className="flex flex-wrap justify-center gap-5">
-              
-              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]">
-                <div ref={anime3} className="w-full relative h-[60px] mb-6">
-                  <img
-                    src="/assets/Group 31.png"
-                    className="absolute top-6 left-1/2 -translate-x-[125%]"
-                  />
-                  <img
-                    src="/assets/Group 32.png"
-                    className="absolute top-3 left-1/2 -translate-x-[1%]"
-                  />
-                </div>
-                <h3 className="font-semibold text-lg sm:text-xl mb-2 text-gray-700">
-                  Iterative Process
-                </h3>
-                <p className="text-sm text-gray-500">
-                  We Refine, Test, And Improve Every Step Of The Way.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]">
-                <div ref={anime4} className="w-full relative h-[60px] mb-6">
-                  <img
-                    src="/assets/blue circle.png"
-                    className="absolute top-2 left-1/2 -translate-x-[125%]"
-                  />
-                  <img
-                    src="/assets/blue star.png"
-                    className="absolute top-3 left-1/2 -translate-x-[95%]"
-                  />
-                  <img
-                    src="/assets/red dot.png"
-                    className="absolute top-3 left-1/2 -translate-x-[55%]"
-                  />
-                  <img
-                    src="/assets/red rectangle.png"
-                    className="absolute top-2 left-1/2 -translate-x-[45%]"
-                  />
-                  <img
-                    src="/assets/yellow dot.png"
-                    className="absolute top-5 left-1/2 -translate-x-[75%]"
-                  />
-                  <img
-                    src="/assets/yellow rectangle.png"
-                    className="absolute top-7 left-1/2 -translate-x-[90%]"
-                  />
-                </div>
-                <h3 className="font-semibold text-lg sm:text-xl mb-2 text-gray-700">
-                  Engineering Meets Empathy
-                </h3>
-                <p className="text-sm text-gray-500">
-                  Our Tech Is Grounded In Purpose And Built For Real-World Use.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-[20px] p-7 h-[260px] max-h-[282px] w-[90%] sm:w-[300px] xl:w-[400px] mx-auto sm:mx-0 text-center shadow-[8px_8px_20px_rgba(0,0,0,0.05),-4px-4px_12px_rgba(255,165,0,0.15)] border border-orange-100 transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_30px_rgba(0,0,0,0.08),-6px-6px_16px_rgba(255,165,0,0.25)]">
-                <div ref={anime5} className="w-full relative h-[60px] mb-6">
-                  <img
-                    src="/assets/Ellipse 49.png"
-                    className="absolute top-6 left-1/2 -translate-x-[125%]"
-                  />
-                  <img
-                    src="/assets/Vector.png"
-                    className="absolute top-5 left-1/2 -translate-x-[55%]"
-                  />
-                </div>
-                <h3 className="font-semibold text-lg sm:text-xl mb-2 text-gray-700">
-                  Launch-Ready Mindset
-                </h3>
-                <p className="text-sm text-gray-500">
-                  We Don’t Stop At Ideas; We Take Products To Market.
-                </p>
-              </div>
+            <div className="text-sm text-black mt-1 text-right sm:text-left leading-[1.75]">
+              Code And Rules,
+              <br />
+              Creativity and Passion.
             </div>
-          </div>
-        </div>
-
-        <div className="overflow-hidden whitespace-nowrap mt-12">
-          <div className="inline-block animate-marquee text-2xl sm:text-4xl md:text-6xl xl:text-7xl font-extrabold text-white soft-shadow">
-            Build faster. Launch smarter. No code required.
           </div>
         </div>
       </div>
-    </section>
+      <div className="flex flex-col h-full justify-between animate-goals">
+        {/* 1️⃣ End-To-End Collaboration */}
+        <div className="relative bg-[#f7f3ef] w-[90%] max-w-4xl mx-auto shadow-md mb-6 px-6 py-10 flex flex-col items-center border border-black">
+          <div className="flex justify-center items-center mb-8 gap-3 md:gap-4 xl:gap-6">
+            <img
+              src="/assets/lines.png"
+              alt="Icon"
+              className="w-10 md:w-15 xl:w-18"
+            />
+          </div>
+          <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mb-4 text-gray-700 text-center">
+            End-To-End Collaboration
+          </h3>
+          <p className="text-sm md:text-base xl:text-lg text-gray-500 text-center max-w-xl">
+            We Work With You From The First Idea To The Final Launch.
+          </p>
+        </div>
+
+        {/* 2️⃣ Creative Problem-Solving */}
+        <div className="relative bg-[#f7f3ef] w-[90%] max-w-4xl mx-auto shadow-md mb-6 px-6 py-10 flex flex-col items-center border border-black">
+          <div className="flex justify-center items-center mb-8 gap-2 md:gap-3 xl:gap-4 flex-wrap">
+            <img
+              src="/assets/problem.png"
+              alt="Icon"
+              className="w-10 md:w-15 xl:w-18"
+            />
+          </div>
+          <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mb-4 text-gray-700 text-center">
+            Creative Problem-Solving
+          </h3>
+          <p className="text-sm md:text-base xl:text-lg text-gray-500 text-center max-w-xl">
+            Blending Logic And Artistry To Deliver Smart, Elegant Solutions.
+          </p>
+        </div>
+
+        {/* 3️⃣ Iterative Process */}
+        <div className="relative bg-[#f7f3ef] w-[90%] max-w-4xl mx-auto shadow-md mb-6 px-6 py-10 flex flex-col items-center border border-black">
+          <div className="flex justify-center items-center mb-8 gap-3 md:gap-4 xl:gap-6">
+            <img
+              className="w-10 md:w-15 xl:w-18"
+              src="/assets/recycle.png"
+              alt=""
+            />
+          </div>
+          <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mb-4 text-gray-700 text-center">
+            Iterative Process
+          </h3>
+          <p className="text-sm md:text-base xl:text-lg text-gray-500 text-center max-w-xl">
+            We Refine, Test, And Improve Every Step Of The Way.
+          </p>
+        </div>
+
+        {/* 4️⃣ Engineering Meets Empathy */}
+        <div className="relative bg-[#f7f3ef] w-[90%] max-w-4xl mx-auto shadow-md mb-6 px-6 py-10 flex flex-col items-center border border-black">
+          <div className="flex justify-center items-center mb-8 gap-2 md:gap-3 xl:gap-4 flex-wrap">
+            <img
+              src="/assets/engine.png"
+              alt="Icon"
+              className="w-10 md:w-15 xl:w-18"
+            />
+          </div>
+          <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mb-4 text-gray-700 text-center">
+            Engineering Meets Empathy
+          </h3>
+          <p className="text-sm md:text-base xl:text-lg text-gray-500 text-center max-w-xl">
+            Our Tech Is Grounded In Purpose And Built For Real-World Use.
+          </p>
+        </div>
+
+        {/* 5️⃣ Launch-Ready Mindset */}
+        <div className="relative bg-[#f7f3ef] w-[90%] max-w-4xl mx-auto shadow-md mb-6 px-6 py-10 flex flex-col items-center border border-black">
+          <div className="flex justify-center items-center mb-8 gap-3 md:gap-4 xl:gap-6">
+            <img
+              src="/assets/checked.png"
+              alt="Icon"
+              className="w-10 md:w-15 xl:w-18"
+            />
+          </div>
+          <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mb-4 text-gray-700 text-center">
+            Launch-Ready Mindset
+          </h3>
+          <p className="text-sm md:text-base xl:text-lg text-gray-500 text-center max-w-xl">
+            We Don’t Stop At Ideas; We Take Products To Market.
+          </p>
+        </div>
+
+        {/* repeat for smooth scrolling */}
+
+        {/* 1️⃣ End-To-End Collaboration */}
+        <div className="relative bg-[#f7f3ef] w-[90%] max-w-4xl mx-auto shadow-md mb-6 px-6 py-10 flex flex-col items-center border border-black">
+          <div className="flex justify-center items-center mb-8 gap-3 md:gap-4 xl:gap-6">
+            <img
+              src="/assets/lines.png"
+              alt="Icon"
+              className="w-10 md:w-15 xl:w-18"
+            />
+          </div>
+          <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mb-4 text-gray-700 text-center">
+            End-To-End Collaboration
+          </h3>
+          <p className="text-sm md:text-base xl:text-lg text-gray-500 text-center max-w-xl">
+            We Work With You From The First Idea To The Final Launch.
+          </p>
+        </div>
+
+        {/* 2️⃣ Creative Problem-Solving */}
+        <div className="relative bg-[#f7f3ef] w-[90%] max-w-4xl mx-auto shadow-md mb-6 px-6 py-10 flex flex-col items-center border border-black">
+          <div className="flex justify-center items-center mb-8 gap-2 md:gap-3 xl:gap-4 flex-wrap">
+            <img
+              src="/assets/problem.png"
+              alt="Icon"
+              className="w-10 md:w-15 xl:w-18"
+            />
+          </div>
+          <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mb-4 text-gray-700 text-center">
+            Creative Problem-Solving
+          </h3>
+          <p className="text-sm md:text-base xl:text-lg text-gray-500 text-center max-w-xl">
+            Blending Logic And Artistry To Deliver Smart, Elegant Solutions.
+          </p>
+        </div>
+
+        {/* 3️⃣ Iterative Process */}
+        <div className="relative bg-[#f7f3ef] w-[90%] max-w-4xl mx-auto shadow-md mb-6 px-6 py-10 flex flex-col items-center border border-black">
+          <div className="flex justify-center items-center mb-8 gap-3 md:gap-4 xl:gap-6">
+            <img
+              className="w-10 md:w-15 xl:w-18"
+              src="/assets/recycle.png"
+              alt=""
+            />
+          </div>
+          <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mb-4 text-gray-700 text-center">
+            Iterative Process
+          </h3>
+          <p className="text-sm md:text-base xl:text-lg text-gray-500 text-center max-w-xl">
+            We Refine, Test, And Improve Every Step Of The Way.
+          </p>
+        </div>
+
+        {/* 4️⃣ Engineering Meets Empathy */}
+        <div className="relative bg-[#f7f3ef] w-[90%] max-w-4xl mx-auto shadow-md mb-6 px-6 py-10 flex flex-col items-center border border-black">
+          <div className="flex justify-center items-center mb-8 gap-2 md:gap-3 xl:gap-4 flex-wrap">
+            <img
+              src="/assets/engine.png"
+              alt="Icon"
+              className="w-10 md:w-15 xl:w-18"
+            />
+          </div>
+          <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mb-4 text-gray-700 text-center">
+            Engineering Meets Empathy
+          </h3>
+          <p className="text-sm md:text-base xl:text-lg text-gray-500 text-center max-w-xl">
+            Our Tech Is Grounded In Purpose And Built For Real-World Use.
+          </p>
+        </div>
+
+        {/* 5️⃣ Launch-Ready Mindset */}
+        <div className="relative bg-[#f7f3ef] w-[90%] max-w-4xl mx-auto shadow-md mb-6 px-6 py-10 flex flex-col items-center border border-black">
+          <div className="flex justify-center items-center mb-8 gap-3 md:gap-4 xl:gap-6">
+            <img
+              src="/assets/checked.png"
+              alt="Icon"
+              className="w-10 md:w-15 xl:w-18"
+            />
+          </div>
+          <h3 className="font-semibold text-2xl md:text-3xl xl:text-4xl mb-4 text-gray-700 text-center">
+            Launch-Ready Mindset
+          </h3>
+          <p className="text-sm md:text-base xl:text-lg text-gray-500 text-center max-w-xl">
+            We Don’t Stop At Ideas; We Take Products To Market.
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }

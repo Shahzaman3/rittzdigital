@@ -67,14 +67,13 @@ function MenuItem({ link, text }) {
 
   return (
     <div className="flex-1 relative overflow-hidden text-center shadow-[0_-1px_0_0_#000]" ref={itemRef}>
-      <a
+      <div
         className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-semibold text-black text-[4vh] hover:text-[#060010] focus:text-[#060010] focus-visible:text-[#060010]"
-        href={link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {text}
-      </a>
+      </div>
       <div
         className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none bg-[#060010] translate-y-[101%]"
         ref={marqueeRef}

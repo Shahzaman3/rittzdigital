@@ -27,7 +27,7 @@ export default function MagneticText() {
       const dy = letterY - mouseY;
       const dist = Math.sqrt(dx * dx + dy * dy) || 1;
 
-      const force = Math.min(5000 / dist, 500);
+      const force = Math.min(10000 / dist, 1000);
 
       gsap.to(letter, {
         x: (dx / dist) * force,
@@ -64,12 +64,12 @@ export default function MagneticText() {
   return (
     <div
       ref={containerRef}
-      className="text-5xl cursor-default"
+      className="hidden md:block text-4xl xl:text-5xl cursor-default"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="flex flex-wrap leading-tight">
-        <span className="font-bold text-6xl">
+      <div className="flex flex-wrap leading-tight z">
+        <span className="font-bold text-5xl xl:text-6xl">
           {renderText("W")}
         </span>
         {renderText("e Build Products")}

@@ -10,12 +10,19 @@ export default class Hero extends Component {
   render() {
     return (
       <div className="relative flex overflow-hidden">
-        <SplashCursor />
+        {/* <SplashCursor /> */}
         <div className="w-full h-screen pt-40 pl-20 font-sans overflow-hidden bg-[#b51947] text-black">
           <MagneticText />
+          <h1 className="md:hidden sm:text-4xl text-3xl relative font-semibold leading-tight z-10">
+            <span className="font-bold text-4xl sm:text-5xl">W</span>e Build Products
+            <br />
+            That <span className="font-bold">Scale —</span>
+            <br />
+            <span className="font-bold">No Code Required.</span>
+          </h1>
         </div>
 
-        <div style={{ height: "600px", position: "relative" }}>
+        <div className="h-[300px] md:h-[300px] lg:h-[400px] xl:h-[600px] relative">
           <CardSwap
             cardDistance={60}
             verticalDistance={70}
